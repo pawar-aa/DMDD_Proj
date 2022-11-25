@@ -133,75 +133,75 @@ where not exists(select * from cart where cart_id = 4);
 -------------------------------------------------------------------------------
 
 insert into orders(order_id,order_status,user_id,order_date, address_id)
-select 1,'delivered' ,1,'03-01-22',101 from dual
+select 1,'delivered' ,1,to_date('03/01/22','DD/MM/YY'),101 from dual
 where not exists(select * from orders where order_id=1);
 
 insert into orders(order_id,order_status,user_id,order_date, address_id)
-select 2,'delivered' ,1,'09-01-22',105 from dual
+select 2,'delivered' ,1,to_date('09/01/22','DD/MM/YY'),105 from dual
 where not exists(select * from orders where order_id=2);
 
 insert into orders(order_id,order_status,user_id,order_date, address_id)
-select 3,'shipped' ,2,'21-11-22',102 from dual
+select 3,'shipped' ,2,to_date('21/11/22','DD/MM/YY'),102 from dual
 where not exists(select * from orders where order_id=3);
 
 insert into orders(order_id,order_status,user_id,order_date, address_id)
-select 4,'delivered' ,3,'20-11-22',106 from dual
+select 4,'delivered' ,3,to_date('20/11/22','DD/MM/YY'),106 from dual
 where not exists(select * from orders where order_id=4);
 
 insert into orders(order_id,order_status,user_id,order_date, address_id)
-select 5,'delivered ',4,'19-11-22',104 from dual
+select 5,'delivered ',4,to_date('19/11/22','DD/MM/YY'),104 from dual
 where not exists(select * from orders where order_id=5);
 
 insert into orders(order_id,order_status,user_id,order_date, address_id)
-select 6,'delivered',5,'11-09-21', 107 from dual
+select 6,'delivered',5,to_date('11/09/21','DD/MM/YY'), 107 from dual
 where not exists(select * from orders where order_id=6);
 
 insert into orders(order_id,order_status,user_id,order_date, address_id)
-select 7,'shipped',6,'11-09-22', 108 from dual
+select 7,'shipped',6,to_date('11/09/22','DD/MM/YY'), 108 from dual
 where not exists(select * from orders where order_id=7);
 
 insert into orders(order_id,order_status,user_id,order_date, address_id)
-select 8,'delivered',7,'03-11-20', 114 from dual
+select 8,'delivered',7,to_date('03/11/20','DD/MM/YY'), 114 from dual
 where not exists(select * from orders where order_id=8);
 
 insert into orders(order_id,order_status,user_id,order_date, address_id)
-select 9,'delivered',8,'01-01-21', 110 from dual
+select 9,'delivered',8,to_date('01/01/21','DD/MM/YY'), 110 from dual
 where not exists(select * from orders where order_id=9);
 
 insert into orders(order_id,order_status,user_id,order_date, address_id)
-select 10,'shipped',9,'17-08-22', 111 from dual
+select 10,'shipped',9,to_date('17/08/22','DD/MM/YY'), 111 from dual
 where not exists(select * from orders where order_id=10);
 
 insert into orders(order_id,order_status,user_id,order_date, address_id)
-select 11,'delivered',10,'22-05-20', 112 from dual
+select 11,'delivered',10,to_date('22/05/20','DD/MM/YY'), 112 from dual
 where not exists(select * from orders where order_id=11);
 
 insert into orders(order_id,order_status,user_id,order_date, address_id)
-select 12,'delivered',4,'12-06-21', 104 from dual
+select 12,'delivered',4,to_date('12/06/21','DD/MM/YY'), 104 from dual
 where not exists(select * from orders where order_id=12);
 
 insert into orders(order_id,order_status,user_id,order_date, address_id)
-select 13,'shipped',6,'10-12-22', 113 from dual
+select 13,'shipped',6,to_date('10/12/22','DD/MM/YY'), 113 from dual
 where not exists(select * from orders where order_id=13);
 
 insert into orders(order_id,order_status,user_id,order_date, address_id)
-select 14,'delivered',8,'06-05-20', 110 from dual
+select 14,'delivered',8,to_date('06/05/20','DD/MM/YY'), 110 from dual
 where not exists(select * from orders where order_id=14);
 
 insert into orders(order_id,order_status,user_id,order_date, address_id)
-select 15,'delivered',10,'13-03-21', 112 from dual
+select 15,'delivered',10,to_date('13/03/21','DD/MM/YY'), 112 from dual
 where not exists(select * from orders where order_id=15);
 
 insert into orders(order_id,order_status,user_id,order_date, address_id)
-select 16,'delivered',2,'19-02-21', 102 from dual
+select 16,'delivered',2,to_date('19/02/21','DD/MM/YY'), 102 from dual
 where not exists(select * from orders where order_id=16);
 
 insert into orders(order_id,order_status,user_id,order_date, address_id)
-select 17,'delivered',3,'14-07-21', 103 from dual
+select 17,'delivered',3,to_date('14/07/21','DD/MM/YY'), 103 from dual
 where not exists(select * from orders where order_id=17);
 
 insert into orders(order_id,order_status,user_id,order_date, address_id)
-select 18,'shipped',2,'27-08-20', 102 from dual
+select 18,'shipped',2,to_date('27/08/20','DD/MM/YY'), 102 from dual
 where not exists(select * from orders where order_id=18);
 
 
